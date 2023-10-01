@@ -356,9 +356,14 @@
       <h3>Send us a message</h3>
       <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST">
       <!----Honeypot--> 
-        <input type="text" name="_honey" style="display:none">
+      <input type="text" name="_honey" style="display:none">
       <!--Disable reCAPTCHA -->
-        <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_captcha" value="false">
+      <!--Filter Spam -->
+      <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+      <!--Success -->
+      <input type="hidden" name="_next" value="https://yotieno5.github.io/formsubmitdemo/success.html">
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
   
