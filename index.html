@@ -232,22 +232,15 @@
       selectedTab.style.display = "block";
     }
   }
-  //function resetForm(event) {
-  // Prevent the default form submission
- // event.preventDefault();
-
-  // Reset the form elements after successful submission
-  var form = document.getElementById("contact-form");
-  form.reset();
-  
-  // Optionally, you can also clear the honeypot field
+  function resetForm(event) {
+  // clear the honeypot field
   var honeypot = document.querySelector('input[name="_honey"]');
   honeypot.value = '';
-  
-  // Optionally, you can add additional logic to display a success message
-  //alert("Form submitted successfully!");
-  
-  // You can also optionally redirect to a thank you page if needed.
+
+  // Display a success message
+  alert("Form submitted successfully!");
+
+  // redirect to a thank you page.
   window.location.href = "success.html";
 }
 </script>
@@ -361,15 +354,13 @@
     <div class="container tab-content" id="contact">
       <h2>Contact Us</h2>
       <h3>Send us a message</h3>
-      <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST" onsubmit="resetForm()">
+      <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST" onsubmit="resetForm(event)">
         <!-- Honeypot to prevent spam -->
         <input type="text" name="_honey" style="display:none">
         <!-- Disable reCAPTCHA -->
         <input type="hidden" name="_captcha" value="false">
         <!-- Filter Spam -->
         <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-        <!-- Success redirection -->
-       <input type="hidden" name="_next" value="https://yotieno5.github.io/formsubmitdemo/success.html">
 
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
