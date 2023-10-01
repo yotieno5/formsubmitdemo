@@ -1,104 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infrastructural Company</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-
-  header {
-    background-color: #333;
-    color: #00b050;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 4px solid #00b050;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  header img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 20px;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    overflow-x: auto;
-    padding: 10px 0;
-  }
-
-  nav a {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    background-color: #555;
-  }
-
-  .container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 1000px;
-  }
-
-  .container h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  .container p {
-    line-height: 1.6;
-  }
-
-  img.project-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .tab-content {
-    display: none;
-  }
-  .tab-content.active {
-    display: block;
-  }
-  .contact-info {
-    color: #00b050;
-  }
-  .row {
-    display: flex;
-  }
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align contents horizontally */
-    text-align: center; /* Center align contents vertically */
-  }
-  body {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infrastructural Company</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #f4f4f4;
     }
+
+    header {
+      background-color: #333;
+      color: #00b050;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 4px solid #00b050;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header img {
+      max-width: 100px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    nav a {
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+
+    .container h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .container p {
+      line-height: 1.6;
+    }
+
+    img.project-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .contact-info {
+      color: #00b050;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .column {
+      flex: 48%;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    /* Increase space between First Name and Last Name sections */
+    .column label[for="first-name"],
+    .column label[for="last-name"] {
+      display: block;
+      text-align: left;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
     header {
       background-color: #333;
       color: #00b050;
@@ -106,6 +124,7 @@
       padding: 20px;
       border-bottom: 4px solid #00b050;
     }
+
     /* Style the main content area */
     .container {
       background-color: white;
@@ -115,13 +134,16 @@
       margin: 40px auto;
       max-width: 1000px;
     }
+
     .container h2 {
       color: #333;
       margin-bottom: 10px;
     }
+
     .container p {
       line-height: 1.6;
     }
+
     /* Style images */
     img {
       max-width: 65%;
@@ -129,6 +151,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     /* Style project boxes */
     .project {
       background-color: #fff;
@@ -137,255 +160,288 @@
       padding: 20px;
       margin: 10px 0;
     }
+
     .project h3 {
       margin-top: 10px;
     }
+
     .project p {
       color: #777;
     }
- /* Style the contact form */
-  #contact-form {
-    margin-top: 20px;
-    text-align: left;
-  }
 
-  #contact-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  #contact-form input[type="text"],
-  #contact-form input[type="email"],
-  #contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  #contact-form textarea {
-    resize: vertical;
-  }
-
-  #contact-form button {
-    background-color: #00b050;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  #contact-form button:hover {
-    background-color: #008040;
-  }
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 40px 0; /* Increase the padding for better spacing */
-  }
-
-  footer .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Add some transparency to the background */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-
-  footer h2 {
-    margin-bottom: 16px; /* Increase the spacing between the title and contact info */
-    font-size: 20px; /* Increase the font size for better readability */
-  }
-
-  footer .contact-info {
-    font-size: 14px; /* Increase the font size for better readability */
-    margin: 20px 0;
-    list-style: none; /* Remove list bullets */
-    padding: 0;
-  }
-
-  footer .contact-info li {
-    margin: 10px 0;
-  }
-
-  footer .contact-info i {
-    margin-right: 10px; /* Add some spacing between the icon and text */
-    color: #00b050; /* Change the icon color */
-  }
-  
-</style>
-<script>
-  function showTab(tabId) {
-    // Hide all tab contents
-    var tabContents = document.getElementsByClassName("tab-content");
-    for (var i = 0; i < tabContents.length; i++) {
-      tabContents[i].style.display = "none";
+    /* Add this CSS to style the email and phone number sections side by side */
+    .row .column {
+      flex: 48%;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    // Show the selected tab content
-    var selectedTab = document.getElementById(tabId);
-    if (selectedTab) {
-      selectedTab.style.display = "block";
+    /* Style the contact form */
+    #contact-form {
+      margin-top: 20px;
+      text-align: left;
     }
+
+    #contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: normal;
     }
+
+    /* Adjust the width of the first and last name input boxes */
+    #contact-form #first-name,
+    #contact-form #last-name,
+    #contact-form #email,
+    #contact-form #phone {
+      width: 96%;
+    }
+
+    #contact-form #help {
+      width: 24%;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form input[type="tel"],
+    /* Added styling for phone input */
+    #contact-form select,
+    /* Added styling for select dropdown */
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #contact-form textarea {
+      resize: vertical;
+    }
+
+    #contact-form button {
+      background-color: #00b050;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #contact-form button:hover {
+      background-color: #008040;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    footer .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    footer h2 {
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    footer .contact-info {
+      font-size: 14px;
+      margin: 20px 0;
+      list-style: none;
+      padding: 0;
+    }
+
+    footer .contact-info li {
+      margin: 10px 0;
+    }
+
+    footer .contact-info i {
+      margin-right: 10px;
+      color: #00b050;
+    }
+  </style>
+
+  <script>
+    function showTab(tabId) {
+      // Hide all tab contents
+      var tabContents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+      }
+
+      // Show the selected tab content
+      var selectedTab = document.getElementById(tabId);
+      if (selectedTab) {
+        selectedTab.style.display = "block";
+      }
+    }
+
     // Function to display a success message
     function showSuccessMessage() {
       alert("Form submitted successfully!");
     }
-      // Function to show a success message and reload the page
+
+    // Function to show a success message and reload the page
     function showSuccessAndReload() {
       alert("Form submitted successfully!");
-       location.reload(); // Reload the page
+      location.reload(); // Reload the page
     }
-</script>
-
+  </script>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Logo">
+      <h4>NDOJU INFRASTRUCTURAL COMPANY LIMITED</h4>
+    </header>
+    <nav>
+      <a href="#home" onclick="showTab('home')">Home</a>
+      <a href="#about" onclick="showTab('about')">About Us</a>
+      <a href="#services" onclick="showTab('services')">Services</a>
+      <a href="#projects" onclick="showTab('projects')">Projects</a>
+      <a href="#contact" onclick="showTab('contact')">Contact Us</a>
+    </nav>
+  </div>
+  <div class="container tab-content active" id="home">
+    <h2>Welcome to Our Company!</h2>
+    <p>We specialize in providing top-notch infrastructure solutions.</p>
+    <img src="home-image.jpg" alt="Company Building">
+  </div>
+  <div class="container tab-content" id="about">
+    <h2>Company Profile</h2>
+    <p>Ndoju Infrastructural Company Limited (NICoL), is a Private Limited company incorporated under the companies act, 2015 in Kenya. NICoL is duly licensed by NATIONAL CONSTRUCTION AUTHORITY (NCA) to carry out works and projects as a building and construction company.</p>
+    <p>We carry out consultancy in General Engineering in the construction industry ranging from Civil, Architectural, Mechanical, Electrical Works, site management, building material supplies, technical work guidance and general on-site recommendations.</p>
+    <p>We undertake energy production and development projects on consultancy basis, including recommendations of suitable fuel to be applied or used in different powering systems and conditions, (Solar, Coal, Petroleum). We do consultancy jobs either as full contractors or sub-contractors on project management, building, construction, Fuel stations developments, structural and general fabrication for individuals, Private cooperations, NGO's, Public Private Partnerships projects, major Construction companies and Government sponsored roads and Building projects.</p>
+    <p>We are situated in Nairobi, Kahawa, Garissa Road, 4th South Avenue, Plot No. 3411 Nairobi County, and we believe in delivering, proven and high-quality structures and cutting-edge consultancy services in the Energy, construction and Infrastructural development sectors.</p>
+    <p>Our work focus is based on Trust, Quality, Reliability & Innovation. Our broad scope of works are as follows:</p>
+    <h3>Our Leadership Team</h3>
+    <div class="row">
+      <div class="column">
+        <img src="justinus.png" alt="Justinus" style="width: auto; max-width: 100%;">
+        <h4>Justinus Lando</h4>
+        <p>CEO</p>
+      </div>
+      <div class="column">
+        <img src="David.png" alt="David" style="width: auto; max-width: 100%;">
+        <h4>David Ndiga</h4>
+        <p>Director of Operations</p>
+      </div>
+      <div class="column">
+        <img src="Joseph.png" alt="Joseph" style="width: auto; max-width: 100%;">
+        <h4>Joseph Odenyo</h4>
+        <p>Technical Director</p>
+      </div>
+    </div>
+  </div>
+  <div class="container tab-content" id="services">
+    <div class="service">
+      <img src="service1.jpg" alt="Service 1">
+      <h3>Petrol Station Construction</h3>
+      <p>We specialize in constructing and maintaining structural and equipment aspects of petrol stations.</p>
+    </div>
+    <div class="service">
+      <img src="service2.jpg" alt="Service 2">
+      <h3>Gas Station Design</h3>
+      <p>Our expert team designs, fabricates, supplies, and installs gas station canopies, forecourts, and buildings.</p>
+    </div>
+    <div class="service">
+      <img src="service3.jpg" alt="Service 3">
+      <h3>Drainage and Sewerage</h3>
+      <p>We offer comprehensive solutions for designing, constructing, and maintaining drainage and sewerage systems.</p>
+    </div>
+    <!-- Include more services here -->
+    <div class="service">
+      <img src="service4.jpg" alt="Service 4">
+      <h3>Energy Development</h3>
+      <p>Our energy experts provide consultancy for various energy production and development projects, including renewable sources.</p>
+    </div>
+    <div class="service">
+      <img src="service5.jpg" alt="Service 5">
+      <h3>Consultancy Services</h3>
+      <p>We offer consultancy for a wide range of engineering aspects in the construction industry, including site management and technical guidance.</p>
+    </div>
+  </div>
+  <div class="container tab-content" id="projects">
+    <h2>Our Projects</h2>
+    <p>Take a look at some of our completed projects:</p>
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Project Name 1</h3>
+      <p>Description of project 1 goes here.</p>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2">
+      <h3>Project Name 2</h3>
+      <p>Description of project 2 goes here.</p>
+    </div>
+    <div class="project">
+      <img src="project3.jpg" alt="Project 3">
+      <h3>Project Name 3</h3>
+      <p>Description of project 3 goes here.</p>
+    </div>
+  </div>
+  <div class="container tab-content" id="contact">
+    <h2>Contact Us</h2>
+    <h3>Send us a message</h3>
+    <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST" onsubmit="showSuccessAndReload()">
+      <!-- Honeypot to prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+      <!-- Disable reCAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Filter Spam -->
+      <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+      <!-- Success redirection -->
+      <input type="hidden" name="_next" value="https://yotieno5.github.io/formsubmitdemo/success.html">
+      <div class="row">
+        <div class="column">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="column">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="column">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="column">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <label for="help">How can we help you?</label>
+      <select id="help" name="help" required>
+        <option value="general">General Inquiry</option>
+        <option value="quote">Request a Quote</option>
+        <option value="feedback">Feedback</option>
+        <!-- Add more options as needed -->
+      </select>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <footer>
     <div class="container">
-      <header>
-          <img src="logo.png" alt="Logo">
-          <h4>NDOJU INFRASTRUCTURAL COMPANY LIMITED</h4>
-      </header>
-      <nav>
-        <a href="#home" onclick="showTab('home')">Home</a>
-        <a href="#about" onclick="showTab('about')">About Us</a>
-        <a href="#services" onclick="showTab('services')">Services</a>
-        <a href="#projects" onclick="showTab('projects')">Projects</a>
-        <a href="#contact" onclick="showTab('contact')">Contact Us</a>
-      </nav>
+      <h2>Contact Information</h2>
+      <ul class="contact-info">
+        <li><i class="fa fa-envelope"></i>Email: <a href="mailto:ndojuicoltd@gmail.com" style="color: #00b050;">ndojuicoltd@gmail.com</a></li>
+        <li><i class="fa fa-phone"></i>Phone: +254704236777 +256779693146</li>
+        <li><i class="fa fa-map-marker"></i>Address: Kahawa, Garissa Rd, 4th South Avenue Plot 3411</li>
+      </ul>
     </div>
-    <div class="container tab-content active" id="home">
-      <h2>Welcome to Our Company!</h2>
-      <p>We specialize in providing top-notch infrastructure solutions.</p>
-      <img src="home-image.jpg" alt="Company Building">
-    </div>
-    <div class="container tab-content" id="about">
-      <h2>Company Profile</h2>
-      <p>Ndoju Infrastructural Company Limited (NICoL), is a Private Limited company incorporated under the companies
-        act, 2015 in Kenya. NICoL is duly licensed by NATIONAL CONSTRUCTION AUTHORITY (NCA) to carry out works and
-        projects as a building and construction company. </p>
-        <p>We carry out consultancy in General Engineering in the construction industry ranging from Civil, Architectural,
-        Mechanical, Electrical Works, site management, building material supplies, technical work guidance and general
-        on-site recommendations. </p>
-        <p>We undertake energy production and development projects on consultancy basis, including recommendations of
-        suitable fuel to be applied or used in different powering systems and conditions, (Solar, Coal, Petroleum).
-        We do consultancy jobs either as full contractors or sub-contractors on project management, building,
-        construction, Fuel stations developments, structural and general fabrication for individuals, Private cooperations,
-        NGO's, Public Private Partnerships projects, major Construction companies and Government sponsored roads and
-        Building projects. </p>
-        <p>We are situated in Nairobi, Kahawa, Garissa Road, 4
-        th South Avenue, Plot No. 3411 Nairobi County, and we believe
-        in delivering, proven and high-quality structures and cutting-edge consultancy services in the Energy,
-        construction and Infrastructural development sectors. </p>
-        <p>Our work focus is based on Trust, Quality, Reliability & Innovation
-        Our broad scope of works are as follows: </p>
-        <h3>Our Leadership Team</h3>
-        <div class="row">
-          <div class="column">
-            <img src="justinus.png" alt="Justinus" style="width: auto; max-width: 100%;">
-            <h4>Justinus Lando</h4>
-            <p>CEO</p>
-          </div>
-          <div class="column">
-            <img src="David.png" alt="David" style="width: auto; max-width: 100%;">
-            <h4>David Ndiga</h4>
-            <p>Director of Operations</p>
-          </div>
-          <div class="column">
-            <img src="Joseph.png" alt="Joseph" style="width: auto; max-width: 100%;">
-            <h4>Joseph Odenyo</h4>
-            <p>Technical Director</p>
-          </div>
-        </div>  
-    </div>
-    <div class="container tab-content" id="services">
-      <div class="service">
-        <img src="service1.jpg" alt="Service 1">
-        <h3>Petrol Station Construction</h3>
-        <p>We specialize in constructing and maintaining structural and equipment aspects of petrol stations.</p>
-      </div>
-      <div class="service">
-        <img src="service2.jpg" alt="Service 2">
-        <h3>Gas Station Design</h3>
-        <p>Our expert team designs, fabricates, supplies, and installs gas station canopies, forecourts, and buildings.</p>
-      </div>
-      <div class="service">
-        <img src="service3.jpg" alt="Service 3">
-        <h3>Drainage and Sewerage</h3>
-        <p>We offer comprehensive solutions for designing, constructing, and maintaining drainage and sewerage systems.</p>
-      </div>
-      <!-- Include more services here -->
-      <div class="service">
-        <img src="service4.jpg" alt="Service 4">
-        <h3>Energy Development</h3>
-        <p>Our energy experts provide consultancy for various energy production and development projects, including renewable sources.</p>
-      </div>
-      <div class="service">
-        <img src="service5.jpg" alt="Service 5">
-        <h3>Consultancy Services</h3>
-        <p>We offer consultancy for a wide range of engineering aspects in the construction industry, including site management and technical guidance.</p>
-      </div>
-    </div>    
-    <div class="container tab-content" id="projects">
-      <h2>Our Projects</h2>
-      <p>Take a look at some of our completed projects:</p>
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project Name 1</h3>
-        <p>Description of project 1 goes here.</p>
-      </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project Name 2</h3>
-        <p>Description of project 2 goes here.</p>
-      </div>
-      <div class="project">
-        <img src="project3.jpg" alt="Project 3">
-        <h3>Project Name 3</h3>
-        <p>Description of project 3 goes here.</p>
-      </div>    
-    </div>
-    <div class="container tab-content" id="contact">
-      <h2>Contact Us</h2>
-      <h3>Send us a message</h3>
-      <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST" onsubmit="showSuccessAndReload()">
-        <!-- Honeypot to prevent spam -->
-        <input type="text" name="_honey" style="display:none">
-        <!-- Disable reCAPTCHA -->
-        <input type="hidden" name="_captcha" value="false">
-        <!-- Filter Spam -->
-        <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-        <!-- Success redirection -->
-       <input type="hidden" name="_next" value="https://yotieno5.github.io/formsubmitdemo/success.html">
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
-
-</form>
-    </div>
-
-    <footer>
-      <div class="container">
-        <h2>Contact Information</h2>
-        <ul class="contact-info">
-          <li><i class="fa fa-envelope"></i>Email: <a href="mailto:ndojuicoltd@gmail.com" style="color: #00b050;">ndojuicoltd@gmail.com</a></li>
-          <li><i class="fa fa-phone"></i>Phone: +254704236777 +256779693146</li>
-          <li><i class="fa fa-map-marker"></i>Address: Kahawa, Garissa Rd, 4th South Avenue Plot 3411</li>
-        </ul>
-      </div>
-    </footer>
+  </footer>
 </body>
 </html>
