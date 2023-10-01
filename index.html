@@ -232,9 +232,9 @@
       selectedTab.style.display = "block";
     }
   }
-  function resetForm(event) {
+  //function resetForm(event) {
   // Prevent the default form submission
-  event.preventDefault();
+ // event.preventDefault();
 
   // Reset the form elements after successful submission
   var form = document.getElementById("contact-form");
@@ -245,7 +245,7 @@
   honeypot.value = '';
   
   // Optionally, you can add additional logic to display a success message
- // alert("Form submitted successfully!");
+  //alert("Form submitted successfully!");
   
   // You can also optionally redirect to a thank you page if needed.
   window.location.href = "success.html";
@@ -369,7 +369,7 @@
         <!-- Filter Spam -->
         <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
         <!-- Success redirection -->
-       <!--input type="hidden" name="_next" value="https://yotieno5.github.io/formsubmitdemo/success.html" onsubmit="resetForm(event)"-->
+       <input type="hidden" name="_next" value="https://yotieno5.github.io/formsubmitdemo/success.html">
 
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
