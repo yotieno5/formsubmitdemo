@@ -232,7 +232,10 @@
       selectedTab.style.display = "block";
     }
   }
-  function resetForm() {
+  function resetForm(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
   // Reset the form elements after successful submission
   var form = document.getElementById("contact-form");
   form.reset();
@@ -244,8 +247,8 @@
   // Optionally, you can add additional logic to display a success message
   alert("Form submitted successfully!");
   
-  // Prevent the form from actually submitting (since it's an example)
-  return false;
+  // You can also optionally redirect to a thank you page if needed.
+  // window.location.href = "thank-you.html";
 }
 </script>
 
@@ -358,7 +361,7 @@
     <div class="container tab-content" id="contact">
       <h2>Contact Us</h2>
       <h3>Send us a message</h3>
-      <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST" onsubmit="resetForm()">
+      <form id="contact-form" action="https://formsubmit.co/1deabefd3c8987e4dadde8578f3ed253" method="POST" onsubmit="resetForm(event)">
         <!-- Honeypot to prevent spam -->
         <input type="text" name="_honey" style="display:none">
         <!-- Disable reCAPTCHA -->
