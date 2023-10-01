@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDOJU INFRASTRUCTURAL COMPANY LIMITED</title>
+</head>
+<body>
+  <div class="containers">
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h4>NDOJU INFRASTRUCTURAL COMPANY LIMITED</h4>
+    </header>
+    <nav>
+      <a href="#home" onclick="showTab('home')">Home</a>
+      <a href="#about" onclick="showTab('about')">About Us</a>
+      <a href="#services" onclick="showTab('services')">Services</a>
+      <a href="#projects" onclick="showTab('projects')">Projects</a>
+      <a href="#contact" onclick="showTab('contact')">Contact</a>
+    </nav>
+  </div>
+  <div class="container tab-content active" id="home">
+    <h2>Welcome to Our Company!</h2>
+    <p>We specialize in providing top-notch infrastructure solutions.</p>
+    <img src="home-image.jpg" alt="Company Building">
+  </div>
+  <div class="container tab-content" id="about">
+    <h2>Company Profile</h2>
+    <p>Ndoju Infrastructural Company Limited (NICoL), is a Private Limited company incorporated under the companies
+      act, 2015 in Kenya. NICoL is duly licensed by NATIONAL CONSTRUCTION AUTHORITY (NCA) to carry out works and
+      projects as a building and construction company. </p>
+      <p>We carry out consultancy in General Engineering in the construction industry ranging from Civil, Architectural,
+      Mechanical, Electrical Works, site management, building material supplies, technical work guidance and general
+      on-site recommendations. </p>
+      <p>We undertake energy production and development projects on consultancy basis, including recommendations of
+      suitable fuel to be applied or used in different powering systems and conditions, (Solar, Coal, Petroleum).
+      We do consultancy jobs either as full contractors or sub-contractors on project management, building,
+      construction, Fuel stations developments, structural and general fabrication for individuals, Private cooperations,
+      NGO's, Public Private Partnerships projects, major Construction companies and Government sponsored roads and
+      Building projects. </p>
+      <p>We are situated in Nairobi, Kahawa, Garissa Road, 4
+      th South Avenue, Plot No. 3411 Nairobi County, and we believe
+      in delivering, proven and high-quality structures and cutting-edge consultancy services in the Energy,
+      construction and Infrastructural development sectors. </p>
+      <p>Our work focus is based on Trust, Quality, Reliability & Innovation
+      Our broad scope of works are as follows: </p>
+    <h3>Our Leadership Team</h3>
+    <div class="row">
+      <div class="column"> 
+        <img src="justinus.png" alt="Justinus" style="width: auto; max-width: 100%;">
+        <h4>Justinus Lando</h4>
+        <p>CEO</p>
+      </div>
+      <div class="column">
+        <img src="David.png" alt="David" style="width: auto; max-width: 100%;">
+        <h4>David Ndiga</h4>
+        <p>Director of Operations</p>
+      </div>
+      <div class="column">
+        <img src="Joseph.png" alt="Joseph" style="width: auto; max-width: 100%;">
+        <h4>Joseph Odenyo</h4>
+        <p>Technical Director</p>
+      </div>
+    </div>  
+  </div>
+
+  <div class="container tab-content" id="services">
+    <h2 class="section-heading">Our Services</h2>
+    <p class="section-subheading">Explore the range of services we offer:</p>
+  
+    <div class="services-list">
+      <div class="service">
+        <img src="service1.jpg" alt="Service 1">
+        <h3>Petrol Station Construction</h3>
+        <p>We specialize in constructing and maintaining structural and equipment aspects of petrol stations.</p>
+      </div>
+      <div class="service">
+        <img src="service2.jpg" alt="Service 2">
+        <h3>Gas Station Design</h3>
+        <p>Our expert team designs, fabricates, supplies, and installs gas station canopies, forecourts, and buildings.</p>
+      </div>
+      <div class="service">
+        <img src="service3.jpg" alt="Service 3">
+        <h3>Drainage and Sewerage</h3>
+        <p>We offer comprehensive solutions for designing, constructing, and maintaining drainage and sewerage systems.</p>
+      </div>
+      <!-- Include more services here -->
+      <div class="service">
+        <img src="service4.jpg" alt="Service 4">
+        <h3>Energy Development</h3>
+        <p>Our energy experts provide consultancy for various energy production and development projects, including renewable sources.</p>
+      </div>
+      <div class="service">
+        <img src="service5.jpg" alt="Service 5">
+        <h3>Consultancy Services</h3>
+        <p>We offer consultancy for a wide range of engineering aspects in the construction industry, including site management and technical guidance.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container tab-content" id="projects">
+    <h2>Our Projects</h2>
+    <p>Take a look at some of our completed projects:</p>
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Project Name 1</h3>
+      <p>Description of project 1 goes here.</p>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2">
+      <h3>Project Name 2</h3>
+      <p>Description of project 2 goes here.</p>
+    </div>
+    <div class="project">
+      <img src="project3.jpg" alt="Project 3">
+      <h3>Project Name 3</h3>
+      <p>Description of project 3 goes here.</p>
+    </div>
+  </div>
+  
+  <div class="container tab-content" id="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to get in touch:</p>
+    <form id="contact-form" action="https://formsubmit.co/yotieno2000@gmail.com" method="POST">
+     <!----Honeypot--> 
+     <input type="text" name="_honey" style="display:none">
+     <!--Disable reCAPTCHA -->
+     <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+   </form>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      const tabToShow = document.getElementById(tabId);
+      tabToShow.classList.add('active');
+
+      // Scroll to the top of the page
+      document.documentElement.scrollTop = 0;
+    }
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent form from submitting normally
+
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Create a FormData object to easily send form data
+  const formData = new FormData();
+  formData.append('name', name);
+  formData.append('email', email);
+  formData.append('message', message);
+
+  // Send the form data to the server using Fetch
+  fetch('your_server_endpoint_url', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(response => response.json()) // Optional: Parse the response if server returns JSON
+    .then(data => {
+      // Handle the server response here
+      console.log('Server Response:', data);
+    })
+    .catch(error => {
+      // Handle any errors that occur during the fetch operation
+      console.error('Fetch Error:', error);
+    });
+
+  // You can also reset the form fields after submission
+  contactForm.reset();
+});
+
+  });
+  </script>
+    <footer>
+      <div class="container">
+        <h2>Contact Information</h2>
+        <p class="contact-info">Email: <a href="mailto:ndojuicoltd@gmail.com" style="color: #00b050;">ndojuicoltd@gmail.com</a></p>
+        <p class="contact-info">Phone: +254704236777 +256779693146</p>
+        <p class="contact-info">Address: Kahawa, Garissa Rd, 4th South Avenue Plot 3411</p>
+      </div>
+    </footer>      
+</body>
+</html>
