@@ -4,9 +4,222 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Infrastructural Company</title>
+
 <style>
-  /* Your existing styles here */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    background-color: #333;
+    color: #00b050;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #00b050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1000px;
+  }
+
+  .container h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .container p {
+    line-height: 1.6;
+  }
+
+  img.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  .contact-info {
+    color: #00b050;
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align contents horizontally */
+    text-align: center; /* Center align contents vertically */
+  }
+  body {
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #00b050;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 4px solid #00b050;
+    }
+    /* Style the main content area */
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+    .container h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .container p {
+      line-height: 1.6;
+    }
+    /* Style images */
+    img {
+      max-width: 65%;
+      height: 70%;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* Style project boxes */
+    .project {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px 0;
+    }
+    .project h3 {
+      margin-top: 10px;
+    }
+    .project p {
+      color: #777;
+    }
+ /* Style the contact form */
+  #contact-form {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #contact-form textarea {
+    resize: vertical;
+  }
+
+  #contact-form button {
+    background-color: #00b050;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #contact-form button:hover {
+    background-color: #008040;
+  }
+/* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0; /* Increase the padding for better spacing */
+  }
+
+  footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255); /* Add some transparency to the background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  footer h2 {
+    margin-bottom: 16px; /* Increase the spacing between the title and contact info */
+    font-size: 14px; /* Change the font size for better readability */
+  }
+
+  footer .contact-info {
+    font-size: 12px; /* Change the font size for better readability */
+    margin: 10px 0;
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+  }
+
+  footer .contact-info li {
+    margin: 5px 0;
+  }
+
+  footer .contact-info i {
+    margin-right: 10px; /* Add some spacing between the icon and text */
+  }
+    
 </style>
+
 </head>
 <body>
   
