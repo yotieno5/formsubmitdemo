@@ -181,7 +181,7 @@
     background-color: #008040;
   }
 /* Style the footer */
-  footer {
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -191,7 +191,7 @@
   footer .container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255); /* Add some transparency to the background */
+    background-color: rgba(255, 255, 255, 0.9); /* Add some transparency to the background */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -199,22 +199,23 @@
 
   footer h2 {
     margin-bottom: 16px; /* Increase the spacing between the title and contact info */
-    font-size: 14px; /* Change the font size for better readability */
+    font-size: 20px; /* Increase the font size for better readability */
   }
 
   footer .contact-info {
-    font-size: 12px; /* Change the font size for better readability */
-    margin: 10px 0;
+    font-size: 14px; /* Increase the font size for better readability */
+    margin: 20px 0;
     list-style: none; /* Remove list bullets */
     padding: 0;
   }
 
   footer .contact-info li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   footer .contact-info i {
     margin-right: 10px; /* Add some spacing between the icon and text */
+    color: #00b050; /* Change the icon color */
   }
   
 </style>
@@ -379,9 +380,11 @@
     <footer>
       <div class="container">
         <h2>Contact Information</h2>
-        <p class="contact-info">Email: <a href="mailto:ndojuicoltd@gmail.com" style="color: #00b050;">ndojuicoltd@gmail.com</a></p>
-        <p class="contact-info">Phone: +254704236777 +256779693146</p>
-        <p class="contact-info">Address: Kahawa, Garissa Rd, 4th South Avenue Plot 3411</p>
+        <ul class="contact-info">
+          <li><i class="fa fa-envelope"></i>Email: <a href="mailto:ndojuicoltd@gmail.com" style="color: #00b050;">ndojuicoltd@gmail.com</a></li>
+          <li><i class="fa fa-phone"></i>Phone: +254704236777 +256779693146</li>
+          <li><i class="fa fa-map-marker"></i>Address: Kahawa, Garissa Rd, 4th South Avenue Plot 3411</li>
+        </ul>
       </div>
     </footer>
 </body>
